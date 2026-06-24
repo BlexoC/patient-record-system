@@ -4,5 +4,11 @@
         "ward_name": "Mk",
         "doctor_name": "Makau",
         "capacity": 10
+    },
+    {
+        "ward_id": "2",
+        "ward_name": "Metro",
+        "doctor_name": "TakeOff",
+        "capacity": 12
     }
 ]

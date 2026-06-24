@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # 🏥 Patient Record Management System
 
 A command-line based Patient Record Management System built with Python. It allows hospital staff to manage patients, wards, and admissions efficiently through a simple interactive menu.
@@ -80,7 +82,7 @@ cd Patient_Record_System
 3. Run the program:
 
 ```bash
-python main.py
+python-or-python3  main.py
 ```
 
 > Data is automatically loaded on startup and saved on exit.
@@ -93,17 +95,8 @@ python main.py
 
 When you run the program you will see the main menu:
 
-```
-================================================
-       PATIENT RECORD MANAGEMENT SYSTEM
-================================================
-  [1] Manage Patients
-  [2] Manage Wards
-  [3] Admissions
-  [4] Save Data
-  [0] Exit
-================================================
-```
+```[ SCREENSHOT]
+![alt text](image-1.png)
 
 ---
 
@@ -111,18 +104,19 @@ When you run the program you will see the main menu:
 
 **[ SCREENSHOT — Main Patient Menu ]**
 
-| Option | Description |
-|--------|-------------|
-| 1 | Add a new patient |
-| 2 | View all patients |
-| 3 | Search by name or ID |
-| 4 | Update patient details |
-| 5 | Delete a patient |
-| 0 | Go back |
+| Option | Description            |
+| ------ | ---------------------- |
+| 1      | Add a new patient      |
+| 2      | View all patients      |
+| 3      | Search by name or ID   |
+| 4      | Update patient details |
+| 5      | Delete a patient       |
+| 0      | Go back                |
 
 **Adding a Patient**
 
 You will be prompted to enter:
+
 - Patient ID (must be unique)
 - Full Name
 - Email Address
@@ -131,7 +125,7 @@ You will be prompted to enter:
 
 **[ SCREENSHOT — Add Patient ]**
 
----
+---![alt text](image.png)
 
 **Searching for a Patient**
 
@@ -139,21 +133,18 @@ Enter part of a patient's name or ID to find matching records.
 
 **[ SCREENSHOT — Search Patient ]**
 
----
+-![alt text](image-2.png)
 
 ### 2. Manage Wards
 
 **[ SCREENSHOT — Ward Menu ]**
 
-| Option | Description |
-|--------|-------------|
-| 1 | Add a new ward |
-| 2 | View all wards |
-| 0 | Go back |
+<!-- ![alt text](image-13.png) -->
 
 **Adding a Ward**
 
 You will be prompted to enter:
+
 - Ward ID (must be unique)
 - Ward Name
 - Doctor Name assigned to the ward
@@ -161,7 +152,7 @@ You will be prompted to enter:
 
 **[ SCREENSHOT — Add Ward ]**
 
----
+<!-- ![alt text](image-3.png) -->
 
 **Viewing Wards**
 
@@ -169,17 +160,13 @@ Displays all wards along with how many patients are currently admitted and how m
 
 **[ SCREENSHOT — View Wards ]**
 
----
+<!-- ![alt text](image-12.png) -->
 
 ### 3. Admissions
 
 **[ SCREENSHOT — Admissions Menu ]**
+<!-- ![alt text](image-5.png) -->
 
-| Option | Description |
-|--------|-------------|
-| 1 | Admit a patient to a ward |
-| 2 | Discharge a patient from a ward |
-| 0 | Go back |
 
 **Admitting a Patient**
 
@@ -189,7 +176,7 @@ Displays all wards along with how many patients are currently admitted and how m
 
 **[ SCREENSHOT — Admit Patient ]**
 
----
+<!-- ![alt text](image-6.png) -->
 
 **Discharging a Patient**
 
@@ -198,27 +185,35 @@ Displays all wards along with how many patients are currently admitted and how m
 
 **[ SCREENSHOT — Discharge Patient ]**
 
----
+<!-- -![alt text](image-7.png) -->
 
 ### 4. Save Data
 
 Manually saves all current records to the JSON files in the `data/` folder.
+**[SCREENSHOT - Save data]**
+<!-- ![alt text](image-8.png) -->
 
 > Data is also saved automatically when you exit using option `[0]`.
 
+<!-- ![alt text](image-14.png) -->
 ---
 
 ## Data Storage
 
 All data is saved locally in JSON format inside the `data/` folder:
 
-| File | Contents |
-|------|----------|
-| `patient.json` | All patient records |
-| `ward.json` | All ward records |
+| File                  | Contents                     |
+| --------------------- | ---------------------------- |
+| `patient.json`        | All patient records          |
+| `ward.json`           | All ward records             |
 | `administration.json` | All active admission records |
 
 The files are created automatically the first time you save data. If they are empty or missing the system will start fresh without crashing.
+
+** [SCREENSHOT of data storage]**
+<!-- ![alt text](image-9.png)  --> Administration.json
+<!-- ![alt text](image-10.png) --> Patient.json
+<!-- ![alt text](image-11.png) --> Ward.json
 
 ---
 
