@@ -96,7 +96,7 @@ python-or-python3  main.py
 When you run the program you will see the main menu:
 
 ```[ SCREENSHOT]
-![alt text](image-1.png)
+image-1.png
 
 ---
 
@@ -125,7 +125,7 @@ You will be prompted to enter:
 
 **[ SCREENSHOT — Add Patient ]**
 
----![alt text](image.png)
+---image.png
 
 **Searching for a Patient**
 
@@ -133,13 +133,13 @@ Enter part of a patient's name or ID to find matching records.
 
 **[ SCREENSHOT — Search Patient ]**
 
--![alt text](image-2.png)
+image-2.png
 
 ### 2. Manage Wards
 
 **[ SCREENSHOT — Ward Menu ]**
 
-<!-- ![alt text](image-13.png) -->
+image-13.png
 
 **Adding a Ward**
 
@@ -152,7 +152,7 @@ You will be prompted to enter:
 
 **[ SCREENSHOT — Add Ward ]**
 
-<!-- ![alt text](image-3.png) -->
+image-3.png
 
 **Viewing Wards**
 
@@ -160,12 +160,12 @@ Displays all wards along with how many patients are currently admitted and how m
 
 **[ SCREENSHOT — View Wards ]**
 
-<!-- ![alt text](image-12.png) -->
+image-12.png
 
 ### 3. Admissions
 
 **[ SCREENSHOT — Admissions Menu ]**
-<!-- ![alt text](image-5.png) -->
+(image-5.png)
 
 
 **Admitting a Patient**
@@ -176,7 +176,7 @@ Displays all wards along with how many patients are currently admitted and how m
 
 **[ SCREENSHOT — Admit Patient ]**
 
-<!-- ![alt text](image-6.png) -->
+image-6.png
 
 **Discharging a Patient**
 
@@ -185,17 +185,17 @@ Displays all wards along with how many patients are currently admitted and how m
 
 **[ SCREENSHOT — Discharge Patient ]**
 
-<!-- -![alt text](image-7.png) -->
+image-7.png
 
 ### 4. Save Data
 
 Manually saves all current records to the JSON files in the `data/` folder.
 **[SCREENSHOT - Save data]**
-<!-- ![alt text](image-8.png) -->
+(image-8.png)
 
 > Data is also saved automatically when you exit using option `[0]`.
 
-<!-- ![alt text](image-14.png) -->
+image-14.png
 ---
 
 ## Data Storage
@@ -211,9 +211,9 @@ All data is saved locally in JSON format inside the `data/` folder:
 The files are created automatically the first time you save data. If they are empty or missing the system will start fresh without crashing.
 
 ** [SCREENSHOT of data storage]**
-<!-- ![alt text](image-9.png)  --> Administration.json
-<!-- ![alt text](image-10.png) --> Patient.json
-<!-- ![alt text](image-11.png) --> Ward.json
+<!-- image-9.png --> Administration.json
+<!-- image-10.png --> Patient.json
+<!-- image-11.png --> Ward.json
 
 ---
 
