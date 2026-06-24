@@ -125,7 +125,7 @@ You will be prompted to enter:
 
 **[ SCREENSHOT — Add Patient ]**
 
----image.png
+---screenshots/image.png
 
 **Searching for a Patient**
 
@@ -211,9 +211,9 @@ All data is saved locally in JSON format inside the `data/` folder:
 The files are created automatically the first time you save data. If they are empty or missing the system will start fresh without crashing.
 
 ** [SCREENSHOT of data storage]**
-<!-- image-9.png --> Administration.json
-<!-- image-10.png --> Patient.json
-<!-- image-11.png --> Ward.json
+ screenshots/image-9.png  [Administration.json]
+ screenshots/image-10.png  [Patient.json]
+ screenshots/image-11.png  [Ward.json]
 
 ---
 
