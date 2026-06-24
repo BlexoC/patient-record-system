@@ -73,7 +73,7 @@ class HospitalSystem:
             return
 
         phone = input("Phone      : ").strip()
-        if not phone:
+        if not phone or not phone.isdigit():
             print("[!] Enter a valid phone number.")
             return
 
@@ -82,7 +82,7 @@ class HospitalSystem:
             print("[!] Enter a valid date of birth.")
             return
 
-        self.patients.append(Patient(patient_id, name, email, phone, dob))
+        self.patients.append(Patient(patient_id, name, email, int(phone), dob))
         print(f"\n [✓] {name} added successfully.")
 
     def view_patients(self):
@@ -147,9 +147,12 @@ class HospitalSystem:
             else:
                 patient.email = email
 
-        phonenumber = input(f"Phone [{patient.phonenumber}] : ").strip()
-        if phonenumber:
-            patient.phonenumber = phonenumber
+        phone = input(f"Phone [{patient.phonenumber}] : ").strip()
+        if phone:
+            if not phone.isdigit():
+                print("[!] Invalid phone number, keeping current.")
+            else:
+                patient.phonenumber = int(phone)
 
         dob = input(f"Date of Birth [{patient.dob}] : ").strip()
         if dob:
@@ -209,7 +212,7 @@ class HospitalSystem:
             print("[!] Capacity must be a number.")
             return
 
-        self.wards.append(Ward(ward_id, ward_name, doctor_name, capacity))
+        self.wards.append(Ward(ward_id, ward_name, doctor_name, int(capacity)))
         print(f"\n [✓] Ward `{ward_name}` added successfully.")
 
     def view_wards(self):
@@ -316,16 +319,14 @@ class HospitalSystem:
         print("\n [✓] Data saved successfully.")
 
     def load_data(self):
-        if os.path.exists(PATIENT_FILE):
+        if os.path.exists(PATIENT_FILE) and os.path.getsize(PATIENT_FILE) > 0:
             with open(PATIENT_FILE, "r") as f:
                 self.patients = [Patient.from_dict(p) for p in json.load(f)]
 
-        if os.path.exists(WARD_FILE):
+        if os.path.exists(WARD_FILE) and os.path.getsize(WARD_FILE) > 0:
             with open(WARD_FILE, "r") as f:
                 self.wards = [Ward.from_dict(w) for w in json.load(f)]
 
-        if os.path.exists(ADMINISTRATION_FILE):
+        if os.path.exists(ADMINISTRATION_FILE) and os.path.getsize(ADMINISTRATION_FILE) > 0:
             with open(ADMINISTRATION_FILE, "r") as f:
-                self.administrations = [
-                    Administration.from_dict(a) for a in json.load(f)
-                ]
+                self.administrations = [Administration.from_dict(a) for a in json.load(f)]

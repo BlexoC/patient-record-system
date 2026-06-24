@@ -7,7 +7,6 @@ class Patient(Person):
     
 
     def display(self):
-        def display(self):
             print (f"Patient ID : {self.patient_id}")
             print (f"Name : {self.name}")
             print (f"Email : {self.email}")

@@ -1,0 +1,9 @@
+[
+    {
+        "patient_id": "123",
+        "name": "Ble mak",
+        "email": "mak@gmail.com",
+        "phonenumber": 1234,
+        "dob": "2007-12-12"
+    }
+]

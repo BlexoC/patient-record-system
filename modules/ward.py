@@ -31,7 +31,7 @@ class Ward:
             ward_id = data["ward_id"],
             ward_name = data["ward_name"],
             doctor_name = data["doctor_name"],
-            capacity = data ["capacity"]
+            capacity = int(data ["capacity"])
         )
         
 
