@@ -47,6 +47,8 @@ class HospitalSystem:
     def line(self):
         print("-" * 48)
 
+    # ─── PATIENT METHODS ───────────────────────────────
+
     def add_patient(self):
         self.line()
         print("ADD NEW PATIENT")
@@ -181,6 +183,7 @@ class HospitalSystem:
         self.patients.remove(patient)
         print(f"\n [✓] Patient `{patient_id}` deleted successfully.")
 
+    # ─── WARD METHODS ──────────────────────────────────
 
     def add_ward(self):
         self.line()
@@ -209,7 +212,7 @@ class HospitalSystem:
             print("[!] Capacity must be a number.")
             return
 
-        self.wards.append(Ward(ward_id, ward_name, doctor_name, int(capacity)))
+        self.wards.append(Ward(ward_id, ward_name, doctor_name, capacity))
         print(f"\n [✓] Ward `{ward_name}` added successfully.")
 
     def view_wards(self):
@@ -227,7 +230,7 @@ class HospitalSystem:
             ward.display()
             print(f"      Enrolled : {enrolled}/{ward.capacity}")
 
-
+    # ─── ADMISSION METHODS ─────────────────────────────
 
     def admit_patient(self):
         self.line()
@@ -299,6 +302,7 @@ class HospitalSystem:
             f"\n [✓] Patient `{patient_id}` discharged from ward `{ward_id}` successfully."
         )
 
+    # ─── SAVE & LOAD ───────────────────────────────────
 
     def save_data(self):
         os.makedirs("data", exist_ok=True)
