@@ -82,7 +82,7 @@ cd Patient_Record_System
 3. Run the program:
 
 ```bash
-python-or-python3  main.py
+python main.py
 ```
 
 > Data is automatically loaded on startup and saved on exit.
@@ -95,14 +95,13 @@ python-or-python3  main.py
 
 When you run the program you will see the main menu:
 
-```[ SCREENSHOT]
-image-1.png
+![Main Menu](screenshots/image-1.png)
 
 ---
 
 ### 1. Manage Patients
 
-**[ SCREENSHOT — Main Patient Menu ]**
+![Patient Menu](screenshots/image.png)
 
 | Option | Description            |
 | ------ | ---------------------- |
@@ -123,23 +122,21 @@ You will be prompted to enter:
 - Phone Number
 - Date of Birth (YYYY-MM-DD)
 
-**[ SCREENSHOT — Add Patient ]**
+![Add Patient](screenshots/image.png)
 
----screenshots/image.png
+---
 
 **Searching for a Patient**
 
 Enter part of a patient's name or ID to find matching records.
 
-**[ SCREENSHOT — Search Patient ]**
+![Search Patient](screenshots/image-2.png)
 
-image-2.png
+---
 
 ### 2. Manage Wards
 
-**[ SCREENSHOT — Ward Menu ]**
-
-image-13.png
+![Ward Menu](screenshots/image-13.png)
 
 **Adding a Ward**
 
@@ -150,23 +147,19 @@ You will be prompted to enter:
 - Doctor Name assigned to the ward
 - Capacity (number of patients the ward can hold)
 
-**[ SCREENSHOT — Add Ward ]**
-
-image-3.png
+![Add Ward](screenshots/image-3.png)
 
 **Viewing Wards**
 
 Displays all wards along with how many patients are currently admitted and how many slots are available.
 
-**[ SCREENSHOT — View Wards ]**
+![View Wards](screenshots/image-12.png)
 
-image-12.png
+---
 
 ### 3. Admissions
 
-**[ SCREENSHOT — Admissions Menu ]**
-(image-5.png)
-
+![Admissions Menu](screenshots/image-5.png)
 
 **Admitting a Patient**
 
@@ -174,28 +167,27 @@ image-12.png
 - The system checks if the patient exists, the ward exists, the patient is not already admitted, and the ward has available capacity
 - Admission date and time are recorded automatically
 
-**[ SCREENSHOT — Admit Patient ]**
-
-image-6.png
+![Admit Patient](screenshots/image-6.png)
 
 **Discharging a Patient**
 
 - Enter the Patient ID and Ward ID
 - The system confirms the active admission and removes the record
 
-**[ SCREENSHOT — Discharge Patient ]**
+![Discharge Patient](screenshots/image-7.png)
 
-image-7.png
+---
 
 ### 4. Save Data
 
 Manually saves all current records to the JSON files in the `data/` folder.
-**[SCREENSHOT - Save data]**
-(image-8.png)
+
+![Save Data](screenshots/image-8.png)
 
 > Data is also saved automatically when you exit using option `[0]`.
 
-image-14.png
+![Exit](screenshots/image-14.png)
+
 ---
 
 ## Data Storage
@@ -210,10 +202,11 @@ All data is saved locally in JSON format inside the `data/` folder:
 
 The files are created automatically the first time you save data. If they are empty or missing the system will start fresh without crashing.
 
-** [SCREENSHOT of data storage]**
- screenshots/image-9.png  [Administration.json]
- screenshots/image-10.png  [Patient.json]
- screenshots/image-11.png  [Ward.json]
+![Administration JSON](screenshots/image-9.png)
+
+![Patient JSON](screenshots/image-10.png)
+
+![Ward JSON](screenshots/image-11.png)
 
 ---
 
