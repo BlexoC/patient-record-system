@@ -5,5 +5,12 @@
         "email": "mak@gmail.com",
         "phonenumber": 1234,
         "dob": "2007-12-12"
+    },
+    {
+        "patient_id": "234",
+        "name": "John kay",
+        "email": "kay@gmail.com",
+        "phonenumber": 115152797,
+        "dob": "2004-3-4"
     }
 ]

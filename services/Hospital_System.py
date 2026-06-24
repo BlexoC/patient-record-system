@@ -203,6 +203,7 @@ class HospitalSystem:
         if not doctor_name:
             print("[!] Doctor name cannot be empty.")
             return
+        
 
         capacity = input("Capacity  : ").strip()
         if not capacity.isdigit():

@@ -18,6 +18,6 @@ class Administration:
         return cls(
             patient_id = data ["patient_id"],
             ward_id = data ["ward_id"],
-            administerd_at = data.get ["administerd_at"]
+            administerd_at = data.get ("administerd_at")
         )
         
