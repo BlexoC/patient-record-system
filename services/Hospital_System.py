@@ -212,7 +212,7 @@ class HospitalSystem:
             print("[!] Capacity must be a number.")
             return
 
-        self.wards.append(Ward(ward_id, ward_name, doctor_name, capacity))
+        self.wards.append(Ward(ward_id, ward_name, doctor_name, int(capacity)))
         print(f"\n [✓] Ward `{ward_name}` added successfully.")
 
     def view_wards(self):
