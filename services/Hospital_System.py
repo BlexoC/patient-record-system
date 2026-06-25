@@ -107,8 +107,7 @@ class HospitalSystem:
             return
 
         results = [
-            p
-            for p in self.patients
+            p for p in self.patients
             if query in p.patient_id.lower() or query in p.name.lower()
         ]
 
@@ -221,10 +220,12 @@ class HospitalSystem:
         if not self.wards:
             print("No wards found.")
             return
-
-        for i, ward in enumerate(self.wards, 1):
+        
+        
+        for i in range(len(self.wards)):
+            ward = self.wards[i]
             enrolled = self.count_enrolled(ward.ward_id)
-            print(f"\n [{i}]")
+            print(f"\n [{i + 1}]")
             ward.display()
             print(f"      Enrolled : {enrolled}/{ward.capacity}")
 
