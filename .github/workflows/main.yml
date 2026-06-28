@@ -2,7 +2,7 @@ name: Hospital System CI/CD
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   test:
