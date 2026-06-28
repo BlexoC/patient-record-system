@@ -34,6 +34,7 @@ class Ward:
             capacity = int(data ["capacity"])
         )
         
+# ward cannot be accessed test
 
 
         
