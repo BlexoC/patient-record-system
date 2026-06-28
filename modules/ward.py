@@ -1,6 +1,6 @@
 class Ward:
     def __init__(self,ward_id,ward_name, doctor_name,capacity):
-        self.ward_hey =ward_id
+        self.ward_id =ward_id
         self.ward_name =ward_name
         self.doctor_name = doctor_name
         self.capacity = capacity
