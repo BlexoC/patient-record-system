@@ -32,6 +32,9 @@ This system was built as a Python OOP project to simulate a basic hospital patie
 - Admit patients to wards and discharge them
 - Persistent data storage using JSON files
 - Input validation throughout the system
+- Test for all patient data
+- CI/CD workflow implimented to enable auto merging
+
 
 ---
 
