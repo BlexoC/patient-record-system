@@ -1,0 +1,41 @@
+# .github/workflows/main.yml
+
+name: Hospital System CI/CD
+
+on:
+  push:
+    branches: [main]  # triggers on push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Get the code
+      - uses: actions/checkout@v2
+
+      # Step 2: Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      # Step 3: Install pipenv
+      - name: Install pipenv
+        run: pip install pipenv
+
+      # Step 4: Install packages
+      - name: Install packages
+        run: pipenv install
+
+      # Step 5: Run YOUR pytest tests!
+      - name: Run Tests
+        run: pipenv run pytest -v
+
+  deploy:
+    needs: test  # only runs if tests pass!
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Render
+        run: # deploy commands
