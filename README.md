@@ -32,6 +32,9 @@ This system was built as a Python OOP project to simulate a basic hospital patie
 - Admit patients to wards and discharge them
 - Persistent data storage using JSON files
 - Input validation throughout the system
+- Test for all patient data
+- CI/CD workflow implimented to enable auto merging
+
 
 ---
 
@@ -217,6 +220,7 @@ The files are created automatically the first time you save data. If they are em
 - Doctor information is stored per ward, not as a separate entity
 - No appointment scheduling system
 - Discharge notes are not currently stored persistently
+
 
 ---
 
